@@ -102,9 +102,10 @@ async function defaultApp() {
             await setDoc(doc(store, 'url', code), { url });
         }
 
+        const shortenedURL = `${window.location.origin}/${code}`;
         output.innerHTML = `
-          <h2><a href='${window.location.origin}/${code}'>${code}</a></h2>
-          <p>Go to <a href='${window.location.origin}/${code}'>${window.location.origin}/${code}</a></p>
+          <h2><a href='${shortenedURL}'>${code}</a></h2>
+          <p>Go to <a href='${shortenedURL}'>${window.location.origin}/${code}</a></p>
         `;
         urlInput.value = '';
     }
