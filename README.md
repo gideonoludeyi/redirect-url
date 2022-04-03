@@ -1,6 +1,8 @@
 # redirect-url
 A url shortener that generates a shortened form for a url and redirects all requests to the original url if given the valid code.
 
+**The site will not work because the backend is inactive**
+
 ## Use
 1. Go to https://redirect-url-c2775.web.app/
 2. Enter a url (e.g: https://github.com/gideonoludeyi)
